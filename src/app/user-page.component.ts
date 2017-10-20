@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from './User';
+import {User} from './user';
 import {Router} from '@angular/router';
 import {Http} from '@angular/http';
-import {ActiveUserService} from './activeUser.service';
+import {ActiveUserService} from './active-user.service';
 
 @Component({
   selector: 'app-user-page',
-  templateUrl: './userPage.component.template.html',
+  templateUrl: './user-page.component.template.html',
 })
 export class UserPageComponent implements OnInit {
   activeUser: User;

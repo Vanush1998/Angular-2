@@ -4,7 +4,7 @@ import {Http} from '@angular/http';
 
 @Component({
   selector: 'app-register-page',
-  templateUrl: './signUp.component.template.html',
+  templateUrl: './sign-up.component.template.html',
 })
 export class SignUpComponent implements OnInit {
   inputUsername: string;

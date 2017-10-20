@@ -1,6 +1,6 @@
-import {SignUpComponent} from "./signUp.component";
-import {SignInComponent} from "./signIn.component";
-import {UserPageComponent} from "./userPage.component";
+import {SignUpComponent} from "./sign-up.component";
+import {SignInComponent} from "./sign-in.component";
+import {UserPageComponent} from "./user-page.component";
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 

@@ -1,25 +1,18 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule, Routes} from '@angular/router';
 import {AppComponent} from './app.component';
-import {SignInComponent} from './signIn.component';
-import {UserPageComponent} from './userPage.component';
+import {SignInComponent} from './sign-in.component';
+import {UserPageComponent} from './user-page.component';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
-import {SignUpComponent} from './signUp.component';
-import {HashService} from './hashService.service';
-import {ActiveUserService} from './activeUser.service';
+import {SignUpComponent} from './sign-up.component';
+import {HashService} from './hash.service';
+import {ActiveUserService} from './active-user.service';
 import {Md5} from 'ts-md5/dist/md5';
-
-const appRoutes: Routes = [
-  {path: '', redirectTo: 'SignInPage', pathMatch: 'full'},
-  {path: 'SignInPage', component: SignInComponent},
-  {path: 'UserPage', component: UserPageComponent},
-  {path: 'SignUpPage', component: SignUpComponent}
-];
+import {AppRouterModule} from "./app-router.module";
 
 @NgModule({
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpModule, FormsModule],
+  imports: [BrowserModule, AppRouterModule, HttpModule, FormsModule],
   declarations: [AppComponent, UserPageComponent, SignInComponent, SignUpComponent],
   bootstrap: [AppComponent],
   providers: [Md5, HashService, ActiveUserService]

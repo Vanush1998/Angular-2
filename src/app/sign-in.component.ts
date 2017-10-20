@@ -1,15 +1,15 @@
 import {Component} from '@angular/core';
 import {OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {HashService} from './hashService.service';
+import {HashService} from './hash.service';
 import {Http, RequestOptions} from '@angular/http';
 import {URLSearchParams} from '@angular/http';
 import 'rxjs/add/operator/toPromise';
-import {ActiveUserService} from './activeUser.service';
+import {ActiveUserService} from './active-user.service';
 
 @Component({
   selector: 'app-login-page',
-  templateUrl: './signIn.component.template.html',
+  templateUrl: './sign-in.component.template.html',
 })
 export class SignInComponent implements OnInit {
   inputUsername: string;

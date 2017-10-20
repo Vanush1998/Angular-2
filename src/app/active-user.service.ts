@@ -1,4 +1,4 @@
-import {User} from './User';
+import {User} from './user';
 
 export class ActiveUserService {
   private activeUser: User;
